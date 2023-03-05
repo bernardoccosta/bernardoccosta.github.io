@@ -61,16 +61,22 @@ p, span, button, ul, li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem;
+    padding: 0.5rem;
+    background-color: #26253a;
 }
 
 #symbol {
-    width: 5rem;
+    width: 4rem;
+    cursor: pointer;
 }
 
 #hamburger-button {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#menu-links {
+    display: none;
 }
 
 #hamburger-links {
@@ -122,6 +128,10 @@ p, span, button, ul, li {
 #hamburger-links a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+#menu-links {
+    display: none;
 }
 
 #hamburger-links a:hover {
@@ -182,7 +192,6 @@ p, span, button, ul, li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 1.5rem 1rem;
     padding: 1rem;
     backdrop-filter: blur(0px) saturate(150%);
@@ -211,6 +220,7 @@ p, span, button, ul, li {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 #techs-icons img {
@@ -236,6 +246,7 @@ footer a, img {
   .footer-content {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
   
@@ -253,4 +264,84 @@ footer a, img {
 
 #outro img {
     width: 10rem;
+}
+
+@media only screen and (min-width: 767px) {
+
+    #hero {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    #hero h1 {
+        font-size: xx-large;
+    }
+
+    #hero h2 {
+        font-size: x-large;
+    }
+
+    #hero p {
+        font-size: large;
+        margin: 1rem 2rem;
+    }
+    #hero h1, h2 {
+        text-align: left;
+    }
+
+    #computer-image {
+        width: 25vw;
+        margin: 1.5rem 2.5rem;
+    }
+
+    #hamburger-button {
+        display: none;
+    }
+
+    #menu-links {
+        display: flex;
+        margin-right: 1rem;
+    }
+
+    #menu-links ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    #menu-links li {
+        margin: auto 0.5rem;
+    }
+
+    #menu-links a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    #scroll-cursor {
+        width: 15rem;
+    }
+
+
+    #experience-section section, #techs-section section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    #experience-section div, #techs-section div {
+        width: 350px;
+    }
+
+    #fugo-narancia-img {
+        width: 80%;
+    }
+
+    #outro p {
+        margin: auto 5rem;
+    }
+
 }

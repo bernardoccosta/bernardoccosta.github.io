@@ -23,8 +23,9 @@
     <section id="header-section">
         
         <div class="hamburger">
-            <img id="symbol" src="./src/assets/star-platinum.png" />
+            <img id="symbol" onClick="refreshPage()" src="./src/assets/star-platinum.png" />
             <img src="./src/assets/fat-burger.png" id="hamburger-button" onclick="biteHamburger()"/>
+            <!-- Mobile only -->
             <div id="hamburger-links">
                 <img alt="Close menu button" src="./src/assets/icons8-macos-close-32.png" onclick="cookBurger()"/>
                 <ul>
@@ -34,10 +35,24 @@
                 <li>
                     <a href="#techs-section">Stack</a>
                 </li>
-                <li href="#contact">
-                    <a>Contact</a>
+                <li>
+                    <a href="#outro">Contact</a>
                 </li>
                 </ul>
+            </div>
+            <!-- Desktop only -->
+            <div id="menu-links">
+                <ul>
+                    <li>
+                        <a href="#experience-section" >Experience</a>
+                    </li>
+                    <li>
+                        <a href="#techs-section">Stack</a>
+                    </li>
+                    <li>
+                        <a href="#outro">Contact</a>
+                    </li>
+                    </ul>
             </div>
         </div>
         <div id="hero" >
@@ -58,66 +73,72 @@
 
     <section id="experience-section">
         <h2>Experience</h2>
-        <div>
-            <h3>Septebember 2022 - Present</h3>
-            <h3>PyUp Cybersecurity Inc.</h3>
-            <p>
-                PyUp is a prominent Canadian cybersecurity firm that specializes in dependency and software-supply-chain security. As a junior software developer, I consider it an honor to be a part of this exceptional team. Every day, I strive to learn and grow as I make valuable contributions to the company's endeavors.
-            </p>
-            <ul>
-                <li>Improve our search engine optimization.</li>
-                <li>Make constant updates and more coverage of our legacy codes with tests.</li>
-                <li>Build a new marketing page for the website valuing our vulnerabilities database.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>July 2022 - August 2022</h3>
-            <h3>Eva Commerce Agence</h3>
-            <p>
-                As a freelance back-end developer at Eva Commerce in Brazil, I:
-            </p>
-            <ul>
-                <li>Worked on "Fast Trade," a website that connected postal agencies, users, and clients through an API.</li>
-                <li>Integrated new functionalities into the API, including improved filtering options for services, prices, and customer plans.</li>
-                <li>Collaborated with colleagues to enhance the user experience by providing valuable input.</li>
-            </ul>
-        </div>
-        <div>
-            <h3>May 2021 - July 2022</h3>
-            <h3>Kenzie Academy Brazil</h3>
-            <p>
-                During my time as a <b>student</b> at the Kenzie Academy Brazil one year <b>Bootcamp</b>, I had an experience similar to a part-time job:
-            </p>
-            <ul>
-                <li>I had dailies, check-ins, checkouts, and weekly deadlines for solo projects.</li>
-                <li>I was required to learn a new technology stack every three months and work on a group project.</li>
-                <li>I learned how to solve problems not depending on the tools. I made it in technical interviews and code challenges.</li>
-            </ul>
-        </div>
+        <section>
+            <div>
+                <h3>Septebember 2022 - Present</h3>
+                <h3>PyUp Cybersecurity Inc.</h3>
+                <p>
+                    PyUp is a prominent Canadian cybersecurity firm that specializes in dependency and software-supply-chain security. As a junior software developer, I consider it an honor to be a part of this exceptional team. Every day, I strive to learn and grow as I make valuable contributions to the company's endeavors.
+                </p>
+                <ul>
+                    <li>Improve our search engine optimization.</li>
+                    <li>Make constant updates and more coverage of our legacy codes with tests.</li>
+                    <li>Build a new marketing page for the website valuing our vulnerabilities database.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>July 2022 - August 2022</h3>
+                <h3>Eva Commerce Agence</h3>
+                <p>
+                    As a freelance back-end developer at Eva Commerce in Brazil, I:
+                </p>
+                <ul>
+                    <li>Worked on "Fast Trade," a website that connected postal agencies, users, and clients through an API.</li>
+                    <li>Integrated new functionalities into the API, including improved filtering options for services, prices, and customer plans.</li>
+                    <li>Collaborated with colleagues to enhance the user experience by providing valuable input.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>May 2021 - July 2022</h3>
+                <h3>Kenzie Academy Brazil</h3>
+                <p>
+                    During my time as a <b>student</b> at the Kenzie Academy Brazil one year <b>Bootcamp</b>, I had an experience similar to a part-time job:
+                </p>
+                <ul>
+                    <li>I had dailies, check-ins, checkouts, and weekly deadlines for solo projects.</li>
+                    <li>I was required to learn a new technology stack every three months and work on a group project.</li>
+                    <li>I learned how to solve problems not depending on the tools. I made it in technical interviews and code challenges.</li>
+                </ul>
+            </div>
+        </section>
     </section>
 
     <section id="techs-section">
         <h2>Technology and education</h2>
+        <section>
 
-        <div>
-            <h3>Technologies as Software Developer</h3>
-            <p>I'm experienced in various technologies, including <strong>TypeScript</strong>, <strong>Python</strong>, <strong>React</strong>, <strong>Node</strong>, <strong>Flask</strong>, and <strong>Django</strong>. I&#x27;ve worked with <strong>MongoDB</strong> and <strong>Postgres</strong> databases and have experience with <strong>Docker</strong> and <strong>DevOps</strong> concepts. While I focus on back-end development, I classify myself as a full-stack monolith. Currently, I&#x27;m expanding my knowledge of computer science algorithms with <strong>C++</strong> and working with <strong>Python</strong>, <strong>Django</strong>, <strong>Docker</strong>, <strong>CI</strong>/<strong>CD</strong> in my job.</p>
-            <ul id="techs-icons" >
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"/></li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"/></li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"/></li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/></li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"/></li>
-                <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg"/></li>
-            </ul>
-            <!-- images -->
-        </div>
+            <div>
+                <h3>Technologies as Software Developer</h3>
+                <p>I'm experienced in various technologies, including <strong>TypeScript</strong>, <strong>Python</strong>, <strong>React</strong>, <strong>Node</strong>, <strong>Flask</strong>, and <strong>Django</strong>. I&#x27;ve worked with <strong>MongoDB</strong> and <strong>Postgres</strong> databases and have experience with <strong>Docker</strong> and <strong>DevOps</strong> concepts. While I focus on back-end development, I classify myself as a <strong>full-stack monolith</strong>. Currently, I&#x27;m expanding my knowledge of computer science algorithms with <strong>C++</strong> and working with <strong>Python</strong>, <strong>Django</strong>, <strong>Docker</strong>, <strong>CI</strong>/<strong>CD</strong> in my job.</p>
+                <ul id="techs-icons" >
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"/></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"/></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"/></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"/></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"/></li>
+                    <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg"/></li>
+                </ul>
+            </div>
         
-        <div>
-            <h3>University Undergraduate degree</h3>
-            <p>In 2023, I enrolled as a Mathematics student at Fluminense Federal University, also known as Universidade Federal Fluminense, in Brazil.</p>
-            <img id="fugo-narancia-img" src="./src/assets/FugoNaranciaFirst.png"/>
-        </div>
+            <div>
+                <h3>University Undergraduate degree</h3>
+                <p>In 2023, I enrolled as a Mathematics student at Fluminense Federal University, also known as Universidade Federal Fluminense, in Brazil.</p>
+                <p>I chose this degree to feel more comfortable with academic purposes and learn more about the math concepts in computer science, which I self-study.</p>
+                <img id="fugo-narancia-img" src="./src/assets/FugoNaranciaFirst.png"/>
+                <p>Fun fact: Mathematics was always my childhood nemesis, but it started making sense to me when I began programming for philosophical reasons related to logic.</p>
+            </div>
+        
+        </section>
         
     </section>
 
@@ -125,7 +146,7 @@
         <h2>What's next?</h2>
         <p>Please feel free to contact me if you want to. I am open to freelance gigs and also talking to other people about technology topics.</p>
         <img src="./src/assets/jotaro.png" />
-        <p>Developed by Bernardo Costa. </p>
+        <p>This portfolio was developed by Bernardo Costa. </p>
     </section>
     
     <footer>
@@ -153,6 +174,10 @@
         hamburgerButton = document.getElementById("hamburger-button")
         hamburgerButton.style.display = "block"
     }
+
+    const refreshPage= () => {
+      window.location.reload();
+    } 
 </script>
 
 </html>
