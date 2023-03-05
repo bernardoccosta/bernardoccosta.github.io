@@ -1,0 +1,256 @@
+/* body {
+    background: linear-gradient(to right, #D0CFF9 0%, #D0CFF9 50%, #DDC8E9 50%, #DDC8E9 100%),   
+} */
+
+/* body {
+    background: linear-gradient(
+    to right,
+    #EEDEF9 0%,
+    #EEDEF9 50%,
+    #B8BFDB 50%,
+    #B8BFDB 100%
+    );
+} */
+
+body {
+    /* background-color: #667eea;
+    color: #13085e; */
+    background-color: #302e49;
+    color: #fff
+    /* background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/pawel.jpg") */
+    /* background-image: url("./assets/pawel.jpg"); */
+}
+
+h1, h2, h3 {
+    text-align: left;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+p, span, button, ul, li {
+    font-family: 'Roboto Mono', monospace;
+}
+
+#header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#header-section h1 {
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 2rem;
+}
+
+#header-section h2{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+
+#computer-image {
+    width: 60vw;
+    margin: 1rem auto;
+    border-radius: 8px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+#symbol {
+    width: 5rem;
+}
+
+#hamburger-button {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#hamburger-links {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 50vw;
+    height: 25vh;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    backdrop-filter: blur(0px) saturate(150%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#hamburger-links.show {
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    width: 50vw;
+    height: 25vh;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+    backdrop-filter: blur(0px) saturate(150%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#hamburger-links li {
+    font-size: 1.3rem;
+    margin: 0.5rem 2rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+#hamburger-links a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#hamburger-links a:hover {
+    text-decoration: underline;
+}
+
+#hamburger-links img {
+    margin: 0.3rem;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#header-section p {
+    text-align: justify;
+    text-indent: 5%;
+    margin: 1rem 2.5rem;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+}
+
+#scroll-cursor {
+    width: 10rem;
+    margin-bottom: 3.5rem;
+}
+
+#experience-section h2, h3, p {
+    text-indent: 5%;
+}
+
+#experience-section p {
+    margin: 1rem;
+    text-align: justify;
+}
+
+#experience-section li {
+    list-style: circle;
+}
+
+#experience-section div {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(0px) saturate(150%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#techs-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(0px) saturate(150%);
+    -webkit-backdrop-filter: blur(0px) saturate(150%);
+    background-color: rgba(17, 25, 40, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#fugo-narancia-img   {
+    width: 80vw;
+    border-radius: 10px;
+}
+
+#techs-section h2 {
+    text-indent: 5%;
+}
+
+#techs-section h3 {
+    text-indent: 0%;
+}
+
+#techs-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#techs-icons img {
+    width: 5rem;
+    margin: 0.5rem 1.5rem;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #26253a;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+footer a, img {
+    width: 2rem;
+    margin: 0 1.5rem;
+}
+  
+  .footer-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+#outro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7.5rem;
+}
+
+#outro p {
+    text-align: justify;
+    margin: auto 2rem;
+}
+
+#outro img {
+    width: 10rem;
+}
