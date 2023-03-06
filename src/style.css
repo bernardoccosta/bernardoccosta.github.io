@@ -257,13 +257,25 @@ footer a, img {
     margin-bottom: 7.5rem;
 }
 
+#outro div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
 #outro p {
     text-align: justify;
     margin: auto 2rem;
 }
 
+#outro span {
+    text-align: center;
+    margin: auto 2rem;
+}
+
 #outro img {
     width: 10rem;
+    margin: 0.5rem auto;
 }
 
 @media only screen and (min-width: 767px) {
@@ -340,8 +352,14 @@ footer a, img {
         width: 80%;
     }
 
+    #outro div {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem auto;
+    }
+
     #outro p {
-        margin: auto 5rem;
+        max-width: 300px;
     }
 
 }
